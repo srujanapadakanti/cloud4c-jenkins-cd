@@ -3,9 +3,9 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: ashulb
-  name: ashulb
-  namespace: ashu-final-app
+    app: srujanalb
+  name: srujanalb
+  namespace: srujana-final-app
 spec:
   ports:
   - name: 80-80
@@ -13,7 +13,7 @@ spec:
     protocol: TCP
     targetPort: 80
   selector: # pod finder so we have to use label of pod there
-   app: ashu-appweb
+   app: srujana-appweb
   type: ClusterIP
 status:
   loadBalancer: {}
