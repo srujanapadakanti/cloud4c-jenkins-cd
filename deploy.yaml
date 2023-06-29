@@ -3,24 +3,24 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: ashu-appweb
-  name: ashu-appweb
-  namespace: ashu-final-app
+    app: srujana-appweb
+  name: srujana-appweb
+  namespace: srujana-final-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ashu-appweb
+      app: srujana-appweb
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: ashu-appweb
+        app: srujana-appweb
     spec:
       containers:
-      - image: dockerashu/ashuweb:sec-check16
-        name: ashuweb
+      - image: dockersrujana/srujanaweb:sec-check19
+        name: srujanaweb
         ports:
         - containerPort: 80
         resources: {}
